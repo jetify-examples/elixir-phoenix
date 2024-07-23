@@ -14,6 +14,7 @@ config :elixir_phoenix,
 config :elixir_phoenix, ElixirPhoenixWeb.Endpoint,
   url: [host: "localhost"],
   # set the default port to 8080 for Jetify Cloud
+  # http: [ip: {127, 0, 0, 1}, port: 8080],
   http: [port: 8080],
   adapter: Bandit.PhoenixAdapter,
   render_errors: [

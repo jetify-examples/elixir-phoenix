@@ -6,6 +6,10 @@
     "elixir@latest",
     "bash@latest"
   ],
+  "env": {
+    // Elixir requires the shell to be in utf-8 locale
+    "LANG": "C.UTF-8",
+  },
   "shell": {
     "init_hook": [
       // set up mix to install dependencies 
