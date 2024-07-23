@@ -35,3 +35,6 @@ elixir_phoenix-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# Ignore directories created for Devbox. These install dependencies locally.
+.nix-mix
+.nix-hex
