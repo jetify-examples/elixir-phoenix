@@ -4,7 +4,6 @@
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/main/.schema/devbox.schema.json",
   "packages": [
     "elixir@latest",
-    "bash@latest"
   ],
   "env": {
     // Elixir requires the shell to be in utf-8 locale
@@ -12,18 +11,18 @@
   },
   "shell": {
     "init_hook": [
-      // set up mix to install dependencies 
+      // set up mix to install dependencies
       "mkdir -p .nix-mix",
       "mkdir -p .nix-hex",
       "export MIX_HOME=$PWD/.nix-mix",
       "export HEX_HOME=$PWD/.nix-hex",
       "export ERL_AFLAGS='-kernel shell_history enabled'",
       "mix local.hex --force",
-      "mix local.rebar --force"
+      "mix local.rebar --force",
     ],
     "scripts": {
       "build": "mix setup",
       "start": "mix phx.server",
-    }
-  }
+    },
+  },
 }
