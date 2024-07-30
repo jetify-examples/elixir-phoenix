@@ -1,5 +1,7 @@
 # ElixirPhoenix
 
+[![Deploy on Jetify](https://www.jetify.com/img/devbox/deploy-on-jetify-galaxy.svg)](https://cloud.jetify.com/team/new/deploy?repo=github.com/jetify-examples/elixir-phoenix)
+
 To start your Phoenix server:
 
   * Run `mix setup` to install and setup dependencies
